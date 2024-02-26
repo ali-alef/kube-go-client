@@ -126,7 +126,7 @@ func (n *NameFilter) Set(value string) error {
 }
 
 func main() {
-	nameSpace := flag.String("n", "native", "name space")
+	nameSpace := flag.String("n", "", "name space")
 	action := flag.Int("act", 1, "available actions:\n\t1) get pods\n\t2) exec pod")
 	var nameFilters NameFilter
 	flag.Var(&nameFilters, "filter", "filter pod names using comma")
